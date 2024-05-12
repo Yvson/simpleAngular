@@ -1,5 +1,5 @@
 .basic-page-container {
-    @apply h-full w-full flex justify-center items-center flex-grow;
+    @apply min-h-full w-full flex flex-col justify-center items-center flex-grow;
     @apply bg-indigo-200; 
 }
 

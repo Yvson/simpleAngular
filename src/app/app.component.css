@@ -5,12 +5,12 @@
 }
 
 .basic-page {
-    @apply w-full;
-    @apply h-full;
+    @apply w-full min-h-full;
+    @apply flex flex-grow;
 }
 
 .footer {
-    @apply h-64 w-full bg-indigo-300;
+    @apply h-48 w-full bg-indigo-300;
     @apply flex justify-center items-center;
     @apply text-white font-bold text-xl;
 }
