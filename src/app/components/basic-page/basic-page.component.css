@@ -1,8 +1,10 @@
 .basic-page-container {
+    @apply p-4;
     @apply min-h-full w-full flex flex-col justify-center items-center flex-grow;
     @apply bg-indigo-200; 
 }
 
 .basic-page-text {
-    @apply text-center;
+    @apply m-2;
+    @apply text-justify;
 }
