@@ -1,6 +1,6 @@
 .basic-page-container {
     @apply p-4;
-    @apply min-h-full w-full flex flex-col justify-center items-center flex-grow;
+    @apply min-h-full w-full flex flex-col justify-start items-center flex-grow;
     @apply bg-indigo-200; 
 }
 
