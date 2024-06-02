@@ -1,0 +1,13 @@
+:host {
+  @apply flex-grow w-full;
+  @apply justify-center items-center;
+}
+
+p {
+  @apply text-center;
+}
+
+.universityCard {
+  @apply bg-purple-300;
+  @apply rounded-lg p-4 m-4;
+}

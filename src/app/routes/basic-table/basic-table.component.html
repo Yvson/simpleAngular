@@ -1,0 +1,12 @@
+<ng-container *ngIf="universities | async as universities">
+  <ng-template ngFor let-university [ngForOf]="universities">
+    <div class="universityCard">
+      <p>Name: <b>{{ university.name }}</b></p>
+      <p>Domains: {{ university.domains }}</p>
+      <p>State/Province: {{ university["state-province"] }}</p>
+      <p>Country: {{ university.country }}</p>
+      <p>Code: {{ university.alpha_two_code }}</p>
+      <p>Webpages: {{ university.web_pages }}</p>
+    </div>
+  </ng-template>
+</ng-container>
