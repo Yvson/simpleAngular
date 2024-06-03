@@ -15,6 +15,6 @@ export class UniversityService extends HttpBaseService {
   }
 
   getUniversities(): Observable<Array<University>> {
-    return this.get<Array<University>>("search?country=United+States");
+    return this.get<Array<University>>("search?country=United+States&limit=20");
   }
 }
