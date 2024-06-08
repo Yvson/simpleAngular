@@ -1,4 +1,3 @@
-import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import {IHttpBaseService} from "shared/common/interfaces/http-base/http-base.interface";
 import {Observable} from "rxjs";

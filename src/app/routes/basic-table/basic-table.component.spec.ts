@@ -1,6 +1,9 @@
+// Angular
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BasicTableComponent } from './basic-table.component';
+// Services
+import { BasicTableComponent } from 'routes/basic-table/basic-table.component';
+import { UniversityService } from "shared/services/university/university.service";
 
 describe('BasicTableComponent', () => {
   let component: BasicTableComponent;
@@ -8,10 +11,11 @@ describe('BasicTableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BasicTableComponent]
+      imports: [BasicTableComponent],
+      providers: [UniversityService]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(BasicTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
