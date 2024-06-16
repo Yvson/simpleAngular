@@ -1,5 +1,7 @@
 <nav class="navbar">
-  <p>navbar</p>
+  <a routerLink="">basic-page</a> |
+  <a [routerLink]="['/form']" [state]="{membership: 'free'}">basic-form</a> |
+  <a routerLink="/table">basic-table</a>
 </nav>
 
 <router-outlet></router-outlet>
