@@ -1,0 +1,26 @@
+:host {
+  @apply flex flex-grow w-full;
+  @apply justify-center items-center;
+}
+
+p {
+  @apply text-center;
+}
+
+.universitiesContainer {
+  @apply flex flex-col flex-grow w-full gap-4;
+  @apply justify-center items-center;
+  @apply p-4;
+}
+
+.universityCard {
+  @apply flex flex-col gap-1;
+  @apply w-full;
+  @apply bg-purple-300;
+  @apply rounded-lg p-2;
+}
+
+.loader {
+  @apply flex;
+  @apply justify-center items-center;
+}

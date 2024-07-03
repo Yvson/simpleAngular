@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply h-full w-full;
+}
+
+body {
+    @apply min-h-full w-full flex flex-col justify-center items-center;
+}
+
+.app-root {
+    @apply h-full w-full flex flex-col justify-start items-center flex-grow;
+}
