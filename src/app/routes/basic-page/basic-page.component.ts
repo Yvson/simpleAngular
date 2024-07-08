@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AppUtils} from "app/app.utils";
 
 @Component({
   selector: 'basic-page',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './basic-page.component.css'
 })
 export class BasicPageComponent {
+  baseAppUrl?: string;
 
+  constructor(appUtils: AppUtils) {
+    this.baseAppUrl = appUtils.getBaseAppUrl(location.pathname);
+  }
 }

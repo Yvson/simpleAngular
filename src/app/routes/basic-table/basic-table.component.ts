@@ -4,6 +4,7 @@ import { UniversityService } from "shared/services/university/university.service
 import { Observable } from "rxjs";
 import { CommonModule } from "@angular/common";
 import {HttpClientModule, HttpResponse} from "@angular/common/http";
+import {AppUtils} from "app/app.utils";
 
 @Component({
   selector: 'app-basic-table',
@@ -20,8 +21,14 @@ import {HttpClientModule, HttpResponse} from "@angular/common/http";
 })
 export class BasicTableComponent {
   universities?: Observable<University[]>;
+  baseAppUrl?: string;
 
-  constructor(private universityService: UniversityService) {}
+  constructor(
+    private universityService: UniversityService,
+    appUtils: AppUtils
+  ) {
+    this.baseAppUrl = appUtils.getBaseAppUrl("");
+  }
 
   ngOnInit(): void {
     this.universities = this.universityService.getUniversities();

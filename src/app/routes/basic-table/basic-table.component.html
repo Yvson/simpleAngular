@@ -1,5 +1,11 @@
+
+
 <ng-container *ngIf="universities | async as universities; else loader">
+
   <div class="universitiesContainer">
+    <p class="basic-page-text">
+      {{ baseAppUrl }}
+    </p>
     <ng-template ngFor let-university [ngForOf]="universities">
       <div class="universityCard">
         <p>Name: <b>{{ university.name }}</b></p>
