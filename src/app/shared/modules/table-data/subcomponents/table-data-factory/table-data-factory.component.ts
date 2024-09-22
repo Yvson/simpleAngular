@@ -29,4 +29,8 @@ export class TableDataFactoryComponent {
     return Object.keys(object);
   };
 
+  public capitalizeFirstLetter(string: string): string {
+    return _.capitalize(string);
+  };
+
 }
