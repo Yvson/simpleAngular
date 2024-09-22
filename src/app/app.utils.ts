@@ -35,6 +35,14 @@ export class AppUtils {
 
     return baseAppUrl;
   }
+
+  getBaseAppUrlByRoutes(): string {
+    let baseAppUrl: string;
+    const baseAppUrlArray: string[] = [];
+    let allSubPaths: string[];
+
+    return "baseAppUrl";
+  }
 }
 
 

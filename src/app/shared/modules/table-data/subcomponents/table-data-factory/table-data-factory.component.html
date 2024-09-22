@@ -1,0 +1,31 @@
+<ng-container class="" *ngIf="getValueType(value) === 'string'">
+    <div class="">
+        {{value.toString()}}
+    </div>
+</ng-container>
+
+<ng-container class="" *ngIf="getValueType(value) === 'object' && isArray(value)">
+    <div class="" *ngFor="let val of value">
+        <table-data-factory [value]="val" />
+    </div>
+</ng-container>
+
+<ng-container class="table-data-factory-container" *ngIf="getValueType(value) === 'object' && !isArray(value)" >
+    <table
+        class="table-data-factory"
+        id="table-data-factory-base">
+        <caption class="visually-hidden"></caption>
+        <tbody>
+            <ng-container class="" *ngFor="let val of transformKeysToArray(value)">
+                <tr>
+                    <td class="key-data-table-data-factory">{{ val }}</td>
+                    <td class="value-data-table-data-factory">
+                        <table-data-factory [value]="value[val]" />
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</ng-container>
+
+

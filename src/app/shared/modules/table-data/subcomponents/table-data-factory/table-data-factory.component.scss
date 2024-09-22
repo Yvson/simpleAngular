@@ -1,0 +1,15 @@
+.table-data-factory {
+    width: 100%;
+}
+
+.key-data-table-data-factory {
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.value-data-table-data-factory {
+    background-color: lighten($color: lightblue, $amount: 15);
+    border: 1px solid black;
+    padding: 10px;
+}

@@ -11,14 +11,28 @@ export const routes: Routes = [
   {
     path: "",
     component: BasicPageComponent,
-  },
-  {
-    path: "form",
-    component: BasicFormComponent
-  },
-  {
-    path: "table",
-    component: BasicTableComponent
+    children: [
+      {
+        path: "a",
+        component: BasicPageComponent,
+      },
+      {
+        path: "b",
+        component: BasicPageComponent,
+      },
+      {
+        path: "c",
+        component: BasicPageComponent,
+      },
+      {
+        path: "form",
+        component: BasicFormComponent
+      },
+      {
+        path: "table",
+        component: BasicTableComponent
+      },
+    ]
   },
   {
     path: appUtils.getBaseAppUrl("groups"),
