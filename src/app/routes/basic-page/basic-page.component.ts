@@ -1,12 +1,8 @@
 // Angular
 import { Component, Input } from '@angular/core';
 
-// Modules
-import { TableDataModule } from 'shared/modules/table-data/table-data.module';
-
 // Utils
 import { AppUtils } from "app/app.utils";
-import { CommonModule } from '@angular/common';
 
 const inputs = {
   "string": "string-text",
@@ -35,11 +31,6 @@ const inputs = {
 
 @Component({
   selector: 'basic-page',
-  standalone: true,
-  imports: [
-    CommonModule,
-    TableDataModule
-  ],
   templateUrl: './basic-page.component.html',
   styleUrl: './basic-page.component.css'
 })

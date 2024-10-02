@@ -8,14 +8,6 @@ import {AppUtils} from "app/app.utils";
 
 @Component({
   selector: 'app-basic-table',
-  standalone: true,
-  imports: [
-    CommonModule,
-    HttpClientModule
-  ],
-  providers: [
-    UniversityService,
-  ],
   templateUrl: './basic-table.component.html',
   styleUrl: './basic-table.component.css'
 })

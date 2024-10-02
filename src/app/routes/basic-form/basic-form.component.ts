@@ -3,8 +3,6 @@ import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-basic-form',
-  standalone: true,
-  imports: [FormsModule],
   templateUrl: './basic-form.component.html',
   styleUrl: './basic-form.component.css'
 })

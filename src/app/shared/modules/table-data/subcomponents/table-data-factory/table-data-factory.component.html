@@ -21,6 +21,15 @@
                 <tr>
                     <td class="key-data-table-data-factory">
                       {{ capitalizeFirstLetter(val) }}
+                      <button
+                        matTooltip="Tooltip"
+                        matTooltipPosition="right"
+                      >
+                        <mat-icon
+                          class="help-icon"
+                          fontIcon="help"
+                        />
+                      </button>
                     </td>
                     <td class="value-data-table-data-factory">
                         <table-data-factory [value]="value[val]" />
